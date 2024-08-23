@@ -5,6 +5,14 @@ return {
       inlay_hints = {
         enabled = false,
       },
+      servers = {
+        tsserver = {
+          enabled = true,
+        },
+        vtsls = {
+          enabled = false,
+        },
+      },
     },
   },
 }
