@@ -6,11 +6,15 @@ return {
         enabled = false,
       },
       servers = {
-        tsserver = {
-          enabled = true,
-        },
         vtsls = {
-          enabled = false,
+          settings = {
+            typescript = {
+              tsserver = {
+                nodePath = "node",
+                maxTsServerMemory = 8192,
+              },
+            },
+          },
         },
       },
     },

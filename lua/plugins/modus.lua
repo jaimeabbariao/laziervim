@@ -7,7 +7,7 @@ return {
       require("modus-themes").setup({
         -- Theme comes in two styles `modus_operandi` and `modus_vivendi`
         -- `auto` will automatically set style based on background set with vim.o.background
-        style = "auto",
+        style = "modus_vivendi",
         variant = "default", -- Theme comes in four variants `default`, `tinted`, `deuteranopia`, and `tritanopia`
         transparent = false, -- Transparent background (as supported by the terminal)
         dim_inactive = false, -- "non-current" windows are dimmed
