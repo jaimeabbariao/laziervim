@@ -14,10 +14,10 @@ return {
           lua = { "stylua" },
           fish = { "fish_indent" },
           sh = { "shfmt" },
-          typescriptreact = { "prettier" },
-          typescript = { "prettier" },
-          javascriptreact = { "prettier" },
-          javascript = { "prettier" },
+          typescriptreact = { "biome", "prettier" },
+          typescript = { "biome", "prettier" },
+          javascriptreact = { "biome", "prettier" },
+          javascript = { "biome", "prettier" },
           ruby = { "prettier" },
         },
         -- The options you set here will be merged with the builtin formatters.
@@ -25,6 +25,12 @@ return {
         ---@type table<string, conform.FormatterConfigOverride|fun(bufnr: integer): nil|conform.FormatterConfigOverride>
         formatters = {
           injected = { options = { ignore_errors = true } },
+          biome = {
+            require_cwd = true,
+          },
+          prettier = {
+            require_cwd = true,
+          },
           -- # Example of using dprint only when a dprint.json file is present
           -- dprint = {
           --   condition = function(ctx)
