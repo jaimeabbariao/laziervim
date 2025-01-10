@@ -1,6 +1,7 @@
 return {
   {
     "EdenEast/nightfox.nvim",
+    enabled = false,
     config = function()
       -- Default options
       require("nightfox").setup({
