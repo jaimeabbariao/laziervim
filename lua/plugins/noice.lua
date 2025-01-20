@@ -7,23 +7,20 @@ return {
           silent = true,
         },
       },
-      cmdline = {
-        view = "cmdline",
-        format = {
-          search_down = {
-            view = "cmdline",
-          },
-          search_up = {
-            view = "cmdline",
-          },
-        },
-      },
       views = {
         mini = {
           win_options = {
-            winblend = 0,
+            winhighlight = {
+              Normal = "NormalFloat",
+            },
           },
         },
+      },
+      presets = {
+        bottom_search = false,
+        command_palette = true,
+        long_message_to_split = true,
+        lsp_doc_border = true,
       },
     },
   },
