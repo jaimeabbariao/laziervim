@@ -3,4 +3,3 @@
 -- Add any additional options here
 
 vim.opt.list = false
-vim.opt.guicursor = "n-v-c-sm:block"
