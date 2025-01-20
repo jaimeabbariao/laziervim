@@ -20,9 +20,9 @@ return {
   },
   {
     "wurli/cobalt.nvim",
-    lazy = false,
-    priority = 1000,
-    -- enabled = false,
+    -- lazy = false,
+    -- priority = 1000,
+    enabled = false,
     config = function()
       require("cobalt").setup({
         overrides = function()
@@ -34,7 +34,7 @@ return {
           }
         end,
       })
-      vim.cmd([[colorscheme cobalt]])
+      -- vim.cmd([[colorscheme cobalt]])
     end,
   },
   {
@@ -42,6 +42,13 @@ return {
     enabled = false,
     config = function()
       -- vim.cmd([[colorscheme mellow]])
+    end,
+  },
+  {
+    "rose-pine/neovim",
+    name = "rose-pine",
+    config = function()
+      vim.cmd("colorscheme rose-pine")
     end,
   },
 }
