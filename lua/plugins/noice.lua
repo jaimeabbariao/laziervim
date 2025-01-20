@@ -7,15 +7,6 @@ return {
           silent = true,
         },
       },
-      views = {
-        mini = {
-          win_options = {
-            winhighlight = {
-              Normal = "NormalFloat",
-            },
-          },
-        },
-      },
       presets = {
         bottom_search = false,
         command_palette = true,
