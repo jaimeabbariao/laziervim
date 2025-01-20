@@ -1,10 +1,20 @@
 return {
   {
-    "fenetikm/falcon",
-    lazy = false,
+    "aktersnurra/no-clown-fiesta.nvim",
     priority = 1000,
+    lazy = false,
     config = function()
-      vim.cmd([[colorscheme falcon]])
+      require("no-clown-fiesta").setup()
+      vim.cmd([[colorscheme no-clown-fiesta]])
     end,
+  },
+  {
+    "fenetikm/falcon",
+    -- lazy = false,
+    -- priority = 1000,
+    enabled = false,
+    -- config = function()
+    --   vim.cmd([[colorscheme falcon]])
+    -- end,
   },
 }
