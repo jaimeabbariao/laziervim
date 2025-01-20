@@ -30,6 +30,7 @@ return {
             NormalFloat = { bg = "#002240", fg = "#FFFFFF" },
             FloatBorder = { bg = "#002240", fg = "#FFFFFF" },
             FloatTitle = { bg = "#002240", fg = "#FFFFFF" },
+            ["@lsp.mod.readonly.typescript"] = { fg = "#FFFFFF" },
           }
         end,
       })
